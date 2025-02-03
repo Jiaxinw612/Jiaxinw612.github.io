@@ -21,10 +21,13 @@ jobs:
           python-version: '3.10'
       - run: pip install -r requirements.txt
 
+      - name: Change to my-quarto-site directory
+        run: cd my-quarto-site
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          path: “./my-quarto-site“
+          path: "my-quarto-site"
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
