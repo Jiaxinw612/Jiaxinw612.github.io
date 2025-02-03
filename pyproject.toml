@@ -1,0 +1,19 @@
+[project]
+name = "jiaxinw6121-github-io"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Jiaxinw0612",email = "jiaxinww@bu.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "jiaxinw6121"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
